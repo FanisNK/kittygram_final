@@ -39,8 +39,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install flake8==6.0.0 flake8-isort==6.0.0
           pip install -r ./backend/requirements.txt
-          pip show python-dotenv
-          python -c "from dotenv import load_dotenv; print('dotenv OK')"
 
       - name: Test with flake8 and django tests
         env:
